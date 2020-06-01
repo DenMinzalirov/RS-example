@@ -1,0 +1,69 @@
+.card-title {
+    max-width: 100%;
+    font-size: 4vw;
+}
+.card-img, .card-img-top, .card-img-bottom {
+    min-width: 100%;
+    /* height: 38vh;
+    min-height: 38vh; */
+}
+.text-white .card-img {
+    filter: brightness(75%) saturate(50%);
+}
+/* Flip card */
+.card {
+    margin: 0;
+}
+
+.card-flip {
+    background: none;
+    border: none;
+    padding: 0;
+}
+.card-flip .card {
+    backface-visibility: hidden;
+    transition: transform 300ms;
+    transition-timing-function: linear;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.card-flip .card:first-of-type {
+    transform: rotateY(0deg);
+}
+.card-flip .card:last-of-type {
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+    display: flex;
+}
+.card-flip.activeRotate:hover .card:first-of-type {
+    transform: rotateY(-180deg);
+}
+.card-flip.activeRotate:hover .card:last-of-type {
+    transform: rotateY(0deg);
+}
+
+.rotate {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url(../../img/rotate.png);
+    background-size: 32px;
+    background-repeat: no-repeat;
+    background-position: center 16px;
+    bottom: 5px;
+    right: 5px;
+}
+
+img {
+    object-fit: cover;
+}
+
+figure {
+    margin: 0;
+}
+
+.guessed {
+    opacity: 0.2;
+}

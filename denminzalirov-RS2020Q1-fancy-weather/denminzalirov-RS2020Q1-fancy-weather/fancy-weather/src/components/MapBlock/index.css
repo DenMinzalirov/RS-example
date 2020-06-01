@@ -1,0 +1,49 @@
+.map-block {
+  width: 26.5%;
+  flex-direction: column;
+}
+@media (max-width: 1054px) {
+  .map-block {
+    width: 100%;
+    flex-direction: column;
+  }
+  .weather-block {
+    width: 100% !important;
+    padding: 0;
+  }
+}
+@media (max-width: 321px) {
+  .map-block {
+    padding: 0;
+    position: relative;
+    left: -5px;
+  }
+  .weather-next-day {
+    flex-direction: column;
+  }
+}
+.ymaps-2-1-76-map {
+  -webkit-clip-path: polygon(
+    0 0,
+    100% 0%,
+    100% 75%,
+    100% 75%,
+    100% 100%,
+    89% 88%,
+    0 88%
+  );
+  clip-path: polygon(
+    0 0,
+    100% 0%,
+    100% 75%,
+    100% 75%,
+    100% 100%,
+    89% 88%,
+    0 88%
+  );
+}
+.map-position {
+  position: relative;
+  left: 93px;
+  margin: 0;
+}

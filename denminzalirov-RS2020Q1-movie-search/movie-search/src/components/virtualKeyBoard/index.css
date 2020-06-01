@@ -1,0 +1,84 @@
+.main-key-board {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    max-width: 800px;
+  }
+  .main-key-board-hiden {
+    display: none;
+  }
+  
+  .row-key-board {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .btn-key-board {
+    border-radius: 8px;
+    border: 1.2px solid black;
+    margin: 2px;
+    padding: 10px 5px;
+    animation-duration: infinite;
+    animation-name: release;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    flex: 1;
+    text-align: center;
+    background-color: rgb(58, 58, 58);
+    color: honeydew;
+    list-style-type: none;
+  }
+  
+  #textarea {
+    border: 2px solid black;
+    border-radius: 5px;
+    resize: none;
+  }
+  
+  .description {
+    text-align: center;
+  }
+  
+  .Space {
+    min-width: 321px;
+  }
+  
+  .active {
+    animation: push;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  @keyframes push {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    100% {
+        transform: scale(0.9);
+        opacity: 0.9;
+        background-color: rgb(136, 136, 136);
+        color: rgb(22, 22, 22);
+    }
+  }
+  
+  @keyframes release {
+    0% {
+        transform: scale(0.9);
+        opacity: 0.9;
+        background-color: rgb(136, 136, 136);
+        color: rgb(22, 22, 22);
+      }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+  }

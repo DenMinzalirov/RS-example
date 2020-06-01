@@ -1,0 +1,45 @@
+.controls-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+.controls-btn {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  justify-content: flex-start;
+}
+.control-search {
+  width: 39%;
+}
+@media (max-width: 1024px) {
+  .control-search {
+    width: 100%;
+  }
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: white !important;
+}
+.MuiInputBase-formControl {
+  color: white !important;
+}
+.mic-icon {
+  width: 54px;
+  height: 54px;
+  border: 1px solid #fff;
+  text-align: center;
+  line-height: 69px;
+  /* margin-left: -10px; */
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-search {
+  height: 56px;
+  border: 1px solid rgba(255, 255, 255, 0.5) !important;
+  color: white !important;
+}
+.search-panel {
+  width: 80%;
+}

@@ -1,0 +1,66 @@
+span {
+  color: white;
+}
+.weather-today {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  justify-content: center;
+}
+.date-app {
+  text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+}
+.weather-block {
+  display: flex;
+  flex-direction: column;
+  width: 64%;
+  height: 75vh;
+}
+.weather-next-day-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  width: 220px;
+  margin: 5px;
+}
+.weather-next-day {
+  display: flex;
+}
+.weather-about {
+  text-align: center;
+  margin: 10px;
+  display: flex;
+}
+.weather-today-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.weather-today-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.weather-today-icon h2 {
+  font-size: 70px;
+}
+@media (max-width: 321px) {
+  .weather-today-icon {
+    display: none;
+  }
+}
+.weather-today-icon img {
+  position: relative;
+  width: 122px;
+  top: 36px;
+  right: 119px;
+}

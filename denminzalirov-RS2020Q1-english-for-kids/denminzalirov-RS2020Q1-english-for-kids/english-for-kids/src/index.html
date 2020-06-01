@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>English for kids</title>
+</head>
+
+<body>
+    <header class="container">
+        <nav class="nav flex-column app-navigation">
+            <a class="nav-link active" href="#" name='mainPage'>Main Page</a>
+            <a class="nav-link" href="#" name='actionSetA'>Action (set A)</a>
+            <a class="nav-link" href="#" name='actionSetB'>Action (set B)</a>
+            <a class="nav-link" href="#" name='actionSetC'>Action (set C)</a>
+            <a class="nav-link" href="#" name='adjective'>Adjective</a>
+            <a class="nav-link" href="#" name='animalSetA'>Animal (set A)</a>
+            <a class="nav-link" href="#" name='animalSetB'>Animal (set B)</a>
+            <a class="nav-link" href="#" name='clothes'>Clothes</a>
+            <a class="nav-link" href="#" name='emotion'>Emotion</a>
+        </nav>
+        <div class="navbar navbar-light">
+            <div id="toggle-menu" class=''>
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+            <!-- <div class="start">Start Game</div> -->
+            <div class='toggle' id='switch'>
+                <div class='toggle-text-off'>TRAIN</div>
+                <div class='glow-comp'></div>
+                <div class='toggle-button'></div>
+                <div class='toggle-text-on'>PLAY</div>
+            </div>
+        </div>
+    </header>
+    <section class="container rating"></section>
+    <main class="main container"></main>
+    <div>
+        <audio id='correct' src='./audio/correct.mp3'></audio>
+        <audio id='error' src='./audio/error.mp3'></audio>
+        <audio id='success' src='./audio/success.mp3'></audio>
+        <audio id='failure' src='./audio/failure.mp3'></audio>
+    </div>
+    <div class="container statistics">Statistics</div>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    text-align: center;
+    height: 30px;
+}
+
+.swiper-pagination {
+    bottom: 0 !important;
+}
+
+.card-wrap {
+    width: 77%;
+    height: 520px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5%;
+    border: 3px solid rgb(34, 34, 34);
+    box-shadow: 0 0 10px;
+    padding: 1%;
+    cursor: pointer;
+}
+
+.card-wrap:hover {
+    transition: all 1s cubic-bezier(0.54, -0.4, 0.29, 0.94);
+    transform: scale(1.05);
+  }
+
+img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.search-text {
+    text-align: center;
+}
+
+.row {
+    justify-content: center;
+}
